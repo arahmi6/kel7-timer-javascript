@@ -1,6 +1,6 @@
 # Kelompok 7 - Timer - Javascript #
 ## Description ##
-Tugas pembuatan simple stopwatch ini menggunakan HTML dan VanillaJs yang telah ditugaskan pada mata kuliah Pengembangan Web kelas D4-3B di Jurusan Teknik Informatika POLBAN
+Tugas pembuatan mini project stopwatch ini menggunakan HTML, CSS dan VanillaJs yang telah ditugaskan pada mata kuliah Pengembangan Web kelas D4-3B di Jurusan Teknik Informatika POLBAN
 ## Data Kelompok ##
 * Andika Yudha Riyanto 191524034
 * Aulia Rahmi 191524035

@@ -25,7 +25,7 @@ let startTime = localStorage.getItem('startTime');
 let pauseTime = localStorage.getItem('pauseTime');
 let isPlay = JSON.parse(localStorage.getItem('isPlay')) || false;
 let isPause = JSON.parse(localStorage.getItem('isPause')) || false;
-let isFinish = false;
+
 
 // mount
 didMount();
@@ -46,7 +46,6 @@ DOMBtnStop.addEventListener('click', () => {
 });
 
 DOMBtnLap.addEventListener('click', () => {
-
   lap();
 });
 
@@ -58,19 +57,16 @@ DOMBtnResetLap.addEventListener('click', () => {
 function didMount() {
   if(!startTime && !isPlay && !isPause) {
     countdown = 0;
-    DOMBtnStart.innerText = statusBtn.start;
-   
+    DOMBtnStart.innerText = statusBtn.start; 
     tampilLap();
   } else {
     if(isPause) {
       DOMBtnStart.innerHTML = statusBtn.continue;
-    
       tampilLap();
     } else {
       let newTime = calculateTimeDiff(startTime, Date.now());
       countdown = newTime;
       DOMBtnStart.innerHTML = statusBtn.pause;
-    
       tampilLap();
     }
   }
@@ -127,8 +123,6 @@ function setPlay() {
   localStorage.setItem('isPause', isPause);
   DOMResult.style.display = 'none';
   
-  
-
 }
 
 
