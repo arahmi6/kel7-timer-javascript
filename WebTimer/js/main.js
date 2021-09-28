@@ -9,7 +9,7 @@ const DOMResultTime = document.getElementById('result-time');
 
 //var untuk lap
 var lapsContainer = document.getElementById('laps');
-var incrementLap =0;
+
 // variable
 const statusBtn = {
   start: 'Start',
@@ -46,7 +46,7 @@ DOMBtnStop.addEventListener('click', () => {
 });
 
 DOMBtnLap.addEventListener('click', () => {
-  incrementLap +=1;
+
   lap();
 });
 
@@ -59,15 +59,18 @@ function didMount() {
   if(!startTime && !isPlay && !isPause) {
     countdown = 0;
     DOMBtnStart.innerText = statusBtn.start;
+   
     tampilLap();
   } else {
     if(isPause) {
       DOMBtnStart.innerHTML = statusBtn.continue;
+    
       tampilLap();
     } else {
       let newTime = calculateTimeDiff(startTime, Date.now());
       countdown = newTime;
       DOMBtnStart.innerHTML = statusBtn.pause;
+    
       tampilLap();
     }
   }
@@ -194,19 +197,25 @@ function convertMillisecondToMinutes(millis = 0, isDescription = false) {
 function lap() {
   
   var li = document.createElement('li');
+  var countLap =1;
+  countLap += document.getElementsByTagName('li').length;
+  
   DOMResultTime.innerText = convertMillisecondToMinutes(countdown, true)
-  li.innerText = "Lap ke " + incrementLap + DOMResultTime.innerText;
+  li.innerText = "Lap ke " + countLap + " : " + DOMResultTime.innerText;
   lapsContainer.appendChild(li);
   localStorage.setItem("laps", lapsContainer.innerHTML);
+
  
 }
 
 function tampilLap(){
+
   lapsContainer.innerHTML=localStorage.getItem("laps");
+ 
 }
 
 function resetLap() {
-  incrementLap=0;
+
   lapsContainer.innerHTML="";
   
 }
