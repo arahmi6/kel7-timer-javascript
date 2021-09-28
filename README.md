@@ -1,5 +1,5 @@
-Markup :  # Kelompok 7 - Timer - Javascript #
-Markup :  ## Description ##
-Markup :  ## Pengenalan Fitur Web ##
-Markup :  ## Requirement ##
-Markup :  ## Installation ##
+# Kelompok 7 - Timer - Javascript #
+## Description ##
+## Pengenalan Fitur Web ##
+## Requirement ##
+## Installation ##
