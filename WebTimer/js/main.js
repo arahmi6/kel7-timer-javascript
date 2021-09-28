@@ -1,4 +1,4 @@
-// dom
+// DOM
 const DOMTimer = document.getElementById('timer');
 const DOMBtnStart = document.getElementById('btn-start');
 const DOMBtnStop = document.getElementById('btn-stop');
@@ -7,7 +7,7 @@ const DOMBtnResetLap = document.getElementById('btn-resetLap');
 const DOMResult = document.getElementById('result');
 const DOMResultTime = document.getElementById('result-time');
 
-//var untuk lap
+// var untuk lap
 var lapsContainer = document.getElementById('laps');
 
 // variable
@@ -163,7 +163,7 @@ function convertMillisecondToMinutes(millis = 0, isDescription = false) {
   if (hrs >= 24){
     hrs -= days*24;
     if(isDescription){
-       return ` ${days} Hari ${hrs} Jam ${min} Menit ${sec} Detik`;
+       return ` ${days} hari ${hrs} jam ${min} menit ${sec} detik`;
     }
     hrs = '' + hrs ;
     min = '' + min ;
@@ -173,23 +173,23 @@ function convertMillisecondToMinutes(millis = 0, isDescription = false) {
     hrs = ('00' + hrs).substring(hrs.length);
     min = ('00' + min).substring(min.length);
     sec = ('00' + sec).substring(sec.length);
-    return days + ":"+ hrs + ":" + min + ":" + sec;
+    return days + "."+ hrs + "." + min + "." + sec;
   }
   else if (hrs > 0 && hrs < 24) {
     if(isDescription) {
-      return ` ${hrs} Jam ${min} Menit ${sec} Detik`;
+      return ` ${hrs} jam ${min} menit ${sec} detik`;
     }
     min = '' + min;
     min = ('00' + min).substring(min.length);
     sec = ('00' + sec).substring(sec.length);
-    return "00:" + hrs + ":" + min + ":" + sec;
+    return "00." + hrs + "." + min + "." + sec;
   }
   else {
     if(isDescription) {
-      return ` ${min} Menit ${sec} Detik`;
+      return ` ${min} menit ${sec} detik`;
     } else {
       sec = ('00' + sec).substring(sec.length);
-      return "0:00:" + (min < 10 ? '0' + min : min) + ":" + sec;
+      return "0.00." + (min < 10 ? '0' + min : min) + "." + sec;
     }
   }
 }
@@ -201,7 +201,7 @@ function lap() {
   countLap += document.getElementsByTagName('li').length;
   
   DOMResultTime.innerText = convertMillisecondToMinutes(countdown, true)
-  li.innerText = "Lap ke " + countLap + " : " + DOMResultTime.innerText;
+  li.innerText = "Lap ke-" + countLap + ": " + DOMResultTime.innerText;
   lapsContainer.appendChild(li);
   localStorage.setItem("laps", lapsContainer.innerHTML);
 
