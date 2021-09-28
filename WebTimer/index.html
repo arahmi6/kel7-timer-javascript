@@ -8,10 +8,32 @@
   <title>Stopwatch</title>
 </head>
 <body>
-    <iframe src="stopwatch.html" width="650px" height="250px">
-        </iframe>
-    <iframe src="stopwatch.html" width="650px" height="250px">
-        </iframe>
-    <iframe src="stopwatch.html" width="650px" height="250px">
-        </iframe>
+  <h1>Nama Tugas</h1>
+  <form action="#">
+    <label for="task">Nama Tugas:</label><br>
+    <input type="text" id="task" name="task" placeholder="Nama Tugas"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div class="container">
+    <h1 class="timer" id="timer">
+      <img src="assets/loading-animated.gif" width="100" height="100" />
+    </h1>
+    <div class="action">
+      <button class="btn start" id="btn-start">Start</button>
+      <button class="btn stop" id="btn-stop">Stop</button>
+      <button class="btn lap" id="btn-lap">Lap</button>
+      <button class="btn reset" id="btn-resetLap">Reset Lap</button>
+    </div>
+
+    <h2 class="result" id="result">Total waktu pengerjaan: <span id="result-time"></span> </h2>
+  </div>
+  <div class="laps-box">
+    <ul id="laps"> 
+
+    </ul>
+  </div>
+
+ 
+  <script src="js/main.js"> </script>
 </body>
+</html>
