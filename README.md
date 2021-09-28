@@ -8,10 +8,12 @@ Tugas pembuatan mini project stopwatch ini menggunakan HTML, CSS dan VanillaJs y
 * Kayis Shalahuddin 191524047
 * Tubagus M Akbar K 191524063
 ## Pengenalan Fitur Stopwatch ##
+![picture alt](https://github.com/Kel-7-PW/kel7-timer-javascript/blob/main/Output/Output.png "Title")
 #### Memiliki Indikator Waktu DD:HH:MM:SS ####
 #### Memiliki Tombol Play, Pause, dan Stop ####
 #### Memiliki Fitur Tambahan Lap dan Reset Lap ####
 #### Stopwatch akan terus berjalan jika di refresh/close browser ####
+#### Nama Tugas dan Deskripsi ####
 ## Installation ##
 * Download As ZIP Github ini
 * Extract ZIP
