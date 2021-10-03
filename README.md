@@ -130,17 +130,15 @@ Lihat [buka issues](https://github.com/Kel-7-PW/kel7-timer-javascript/issues) un
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-
 ## Data Kelompok ##
 * Andika Yudha Riyanto 191524034
 * Aulia Rahmi 191524035
 * Johan Hansel Salusu 191524046
 * Kayis Shalahuddin 191524047
 * Tubagus M Akbar K 191524063
+
+<!-- CONTRIBUTING -->
+## Contributing
 
 Kontributor yang membuat program open source menjadi tempat yang luar biasa untuk belajar, menginspirasi, dan berkreasi. Setiap kontribusi yang dibuat sangat di apresiasi **greatly appreciated**.
 
