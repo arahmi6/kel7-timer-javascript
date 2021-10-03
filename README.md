@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://i.pinimg.com/736x/4f/2f/5d/4f2f5deff4e77451831a9df1f9622e93.jpg">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://i.pinimg.com/736x/4f/2f/5d/4f2f5deff4e77451831a9df1f9622e93.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Stopwatch Kel 7</h3>
@@ -41,7 +41,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Stopwatch][product-screenshot]](https://github.com/Kel-7-PW/kel7-timer-javascript/blob/main/Output/Output.png)
+![picture alt](https://github.com/Kel-7-PW/kel7-timer-javascript/blob/main/Output/Output.png "Title")
 
 Tugas pembuatan mini project stopwatch ini menggunakan HTML, CSS dan VanillaJs yang telah ditugaskan pada mata kuliah Pengembangan Web kelas D4-3B di Jurusan Teknik Informatika POLBAN
 
@@ -78,7 +78,6 @@ Berikut beberapa tahap untuk menjalankan secara lokal.
 Berikut software yang dibutuhkan untuk menjalankan program
 * Windows/IOS
 * Web Browser
-  ```
 
 ### Installation
 
@@ -170,8 +169,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tubagus M Akbar K - tubagus.muchamad.tif419@polban.ac.id
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Kel-7-PW/kel7-timer-javascript](https://github.com/Kel-7-PW/kel7-timer-javascript)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
