@@ -36,39 +36,32 @@ input[type=submit]:hover {
 }
 
 .container {
-  width: 100vw;
-  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border-style: solid;
+}
+
+.countdown {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 14px;
 }
 
 .timer {
   font-size: 5rem;
   margin-bottom: 16px;
-  font-family: "Seven Segment";
   font-weight: normal;
 }
 
 .action {
-  display: flex;
   margin-bottom: 28px;
-}
-
-.laps {
-  overflow: scroll;
-}
-
-.laps-box {
-  display: block;
-  text-align: center;
-  align-content: center;
-}
-
-h1 {
-  text-align: center;
 }
 
 .btn {
@@ -100,10 +93,31 @@ h1 {
   background-color: #c71414;
 }
 
-.lap {
-  background-color: #ebe300;
+.split {
+  display: none;
+}
+
+.split-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-bottom: -200px;
+  overflow: auto;
+}
+
+.split-list {
+  display: flex;
+  min-width: 350px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 .result {
   display: none;
+  margin-bottom: 16px;
 }
